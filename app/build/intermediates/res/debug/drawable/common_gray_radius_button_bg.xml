@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@color/home_gray_line" />
+    <corners android:radius="10dp" />
+</shape><!-- From: file:/D:/android_project/test1/CarService_Android/app/src/main/res/drawable/common_gray_radius_button_bg.xml -->

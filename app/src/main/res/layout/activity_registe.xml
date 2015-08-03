@@ -1,0 +1,67 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fxft.cheyoufuwu.ui.login.activity.RegisteActivity">
+
+
+    <com.fxft.cheyoufuwu.common.view.CommonTopBar
+        android:id="@+id/ctb_registe_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:left_custom_layout="@layout/common_top_left_back_button_black_layout"
+        app:left_layout_enable="true"
+        app:title_enable="true"
+        app:title_text="@string/registe"
+        app:title_text_color="@color/black"
+        app:title_text_size="@dimen/middle_text_size"
+        app:right_first_layout_enable="true"
+        app:right_first_layout="@layout/common_next_button"/>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/default_text_size"
+            android:paddingLeft="20dp"
+            android:paddingTop="@dimen/padding_10dp"
+            android:paddingBottom="@dimen/padding_10dp"
+            android:background="@color/white"
+            android:hint="@string/input_user_phone_number"/>
+
+        <TextView
+            android:padding="@dimen/padding_10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/send_verification_code"
+            android:textColor="@color/white"
+            android:background="@drawable/common_button_red_without_radius_bg"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginTop="@dimen/padding_10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_text_size"
+        android:paddingLeft="20dp"
+        android:paddingTop="@dimen/padding_10dp"
+        android:paddingBottom="@dimen/padding_10dp"
+        android:background="@color/white"
+        android:hint="@string/please_input_verification_code"/>
+
+
+
+</LinearLayout>

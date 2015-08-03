@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="iv_right_arrow" type="id" />
+    <item name="bt_save_button" type="id">bt_save_button</item>
+</resources>

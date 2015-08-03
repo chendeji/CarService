@@ -1,0 +1,79 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fxft.cheyoufuwu.ui.homePage.activity.BindingRefuelCardActiivty">
+
+    <com.fxft.cheyoufuwu.common.view.CommonTopBar
+        android:id="@+id/ctb_binding_car_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:left_custom_layout="@layout/common_top_left_back_button_black_layout"
+        app:left_layout_enable="true"
+        app:title_enable="true"
+        app:title_text="@string/binding_refuel_card"
+        app:title_text_color="@color/black"
+        app:title_text_size="@dimen/middle_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/home_gray_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="60dp"
+        android:paddingTop="60dp">
+
+        <TextView
+            android:id="@+id/tv_personal_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/padding_10dp"
+            android:background="@drawable/horizontal_check_button_bg_normal"
+            android:paddingBottom="30dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="30dp"
+            android:text="@string/personal"
+            android:textColor="@color/light_red"
+            android:textSize="@dimen/max_text_size" />
+
+        <TextView
+            android:id="@+id/tv_company_binding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/horizontal_check_button_bg_normal"
+            android:paddingBottom="30dp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:paddingTop="30dp"
+            android:text="@string/company"
+            android:textColor="@color/light_red"
+            android:textSize="@dimen/max_text_size" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/padding_10dp"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_bindoil_info"
+            android:layout_marginRight="@dimen/padding_10dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/binding_detail" />
+    </LinearLayout>
+</LinearLayout>
+<!-- From: file:/D:/android_project/test1/CarService_Android/app/src/main/res/layout/activity_binding_refuel_card.xml -->

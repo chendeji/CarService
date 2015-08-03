@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CheckBox xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cb_common_collect_button"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:button="@drawable/common_top_title_collection_button_bg"
+    >
+
+</CheckBox><!-- From: file:/D:/android_project/test1/CarService_Android/app/src/main/res/layout/common_top_title_favourite_check_layout.xml -->

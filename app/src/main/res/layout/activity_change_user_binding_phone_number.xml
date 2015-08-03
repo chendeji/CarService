@@ -1,0 +1,141 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.fxft.cheyoufuwu.ui.userCenter.activity.ChangeUserBindingPhoneNumberActivity">
+
+    <com.fxft.cheyoufuwu.common.view.CommonTopBar
+        android:id="@+id/ctb_change_bingding_phone_number_bar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        app:left_custom_layout="@layout/common_top_left_back_button_black_layout"
+        app:left_layout_enable="true"
+        app:title_enable="true"
+        app:title_text="@string/title_activity_change_user_binding_phone_number"
+        app:title_text_color="@color/black"
+        app:title_text_size="@dimen/middle_text_size" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/home_gray_line" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/padding_10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:text="@string/current_binding_phone_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/huge_text_size" />
+
+            <EditText
+                android:id="@+id/et_current_binding_phone_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10dp"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:background="@drawable/change_nick_name_et_bg"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/huge_text_size" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:text="@string/new_binding_phone_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/huge_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10dp"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/et_new_bingding_phone_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:hint="@string/input_user_phone_number"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="20dp"
+                    android:paddingTop="@dimen/padding_10dp"
+                    android:textSize="@dimen/default_text_size" />
+
+                <TextView
+                    android:id="@+id/tv_send_verification_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/common_button_red_without_radius_bg"
+                    android:gravity="center"
+                    android:padding="@dimen/padding_10dp"
+                    android:text="@string/send_verification_code"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_10dp"
+                android:text="@string/please_input_verification_code"
+                android:textColor="@color/black"
+                android:textSize="@dimen/huge_text_size" />
+
+            <EditText
+                android:id="@+id/et_input_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/padding_10dp"
+                android:layout_marginTop="@dimen/padding_10dp"
+                android:background="@drawable/change_nick_name_et_bg"
+                android:padding="@dimen/padding_10dp"
+                android:textColor="@color/black"
+                android:textSize="@dimen/huge_text_size" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/send_verification_code_button_explain"
+                    android:textColor="@color/gray_text" />
+
+                <Button
+                    android:id="@+id/bt_binding_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/common_red_radius_button_bg"
+                    android:text="@string/binding"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/huge_text_size" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

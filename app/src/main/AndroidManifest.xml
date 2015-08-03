@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.fxft.cheyoufuwu" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+     
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- SD卡读取权限，用户写入离线定位数据 -->
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.read_logs" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <application
+        android:name=".CheYouApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/BaseTheme" >
+        <meta-data
+            android:name="com.bumptech.glide.integration.okhttp.OkHttpGlideModule"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.ChooseCityActivity"
+            android:label="@string/title_activity_choose_city" />
+        <activity
+            android:name=".ui.homePage.activity.CarWashActivity"
+            android:label="@string/title_activity_car_wash" />
+        <activity
+            android:name=".ui.homePage.activity.SearchMerchantActivity"
+            android:label="@string/title_activity_search_merchant" />
+        <activity
+            android:name=".ui.homePage.activity.MessageActivity"
+            android:label="@string/title_activity_message" />
+        <activity
+            android:name=".ui.homePage.activity.CarRefuelActivity"
+            android:label="@string/title_activity_car_refuel" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.BindingRefuelCardActiivty"
+            android:label="@string/title_activity_binding_refuel_card" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.BindingInfoInputActivity"
+            android:label="@string/title_activity_binding_info" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.CarMaintainActivity"
+            android:label="@string/title_activity_car_maintain" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.RescueActivity"
+            android:label="@string/title_activity_sos" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.AddCarActivity"
+            android:label="@string/title_activity_add_car"
+            android:windowSoftInputMode="stateHidden" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.IllegalActivity"
+            android:label="@string/title_activity_illegal" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.IntegralExchangeActivity"
+            android:label="@string/title_activity_integral_exchange" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.BindingActivateActivity"
+            android:label="@string/title_activity_binding" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.BlackBoxActivity"
+            android:label="@string/title_activity_black_box" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.MerchantDetailActivity"
+            android:label="@string/title_activity_merchant_detail" >
+        </activity>
+        <activity
+            android:name=".ui.homePage.activity.MerchandiseDetailActivity"
+            android:label="@string/title_activity_merchantdise_detail" >
+        </activity>
+        <activity
+            android:name=".ui.userCenter.activity.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".ui.login.activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+        </activity>
+        <activity
+            android:name=".ui.login.activity.RegisteActivity"
+            android:label="@string/title_activity_registe" >
+        </activity>
+        <activity
+            android:name=".ui.login.activity.RegisteDetailActivity"
+            android:label="@string/title_activity_registe_detail" >
+        </activity>
+        <activity
+            android:name=".ui.userCenter.activity.UserDetailActivity"
+            android:label="@string/title_activity_user_detail" >
+        </activity>
+        <activity
+            android:name=".ui.userCenter.activity.ChangeNickNameActivity"
+            android:label="@string/title_activity_change_nick_name" >
+        </activity>
+        <activity
+            android:name=".ui.userCenter.activity.ChangeLoginPSWActivity"
+            android:label="@string/title_activity_change_login_psw" >
+        </activity>
+        <activity
+            android:name=".ui.userCenter.activity.ChangeUserBindingPhoneNumberActivity"
+            android:label="@string/title_activity_change_user_binding_phone_number" >
+        </activity>
+    </application>
+
+</manifest>
